@@ -151,15 +151,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="a_start.cpp" />
+    <ClCompile Include="graph\a_start.cpp" />
+    <ClCompile Include="graph\bfs.cpp" />
     <ClCompile Include="dict_search_text.cpp" />
-    <ClCompile Include="dijkstra.cpp" />
+    <ClCompile Include="graph\dijkstra.cpp" />
+    <ClCompile Include="graph\graphAdjList.cpp" />
+    <ClCompile Include="graph\graphAdjMatrix.cpp" />
     <ClCompile Include="maze.cpp" />
     <ClCompile Include="prime_numbers.cpp" />
     <ClCompile Include="various_cpp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="graph.h" />
+    <ClInclude Include="graph\graph.h" />
+    <ClInclude Include="graph\graphAdjList.h" />
+    <ClInclude Include="graph\graphAdjMatrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
