@@ -12,6 +12,6 @@ private:
 	virtual void addVertexImpl() override;
 	virtual void addEdgeImpl(int vertFrom, int vertTo) override;
 
-	virtual Vertices getOutNeighbors(int vert) override;
-	virtual Vertices getInNeighbors(int vert) override;
+	virtual void getOutNeighbors(int vert, Vertices &vertices) override;
+	virtual void getInNeighbors(int vert, Vertices &vertices) override;
 };

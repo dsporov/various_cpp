@@ -45,6 +45,9 @@
     <ClCompile Include="graph\graphAdjMatrix.cpp">
       <Filter>graph</Filter>
     </ClCompile>
+    <ClCompile Include="graph_test.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="graph\graph.h">

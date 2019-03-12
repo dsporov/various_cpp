@@ -157,6 +157,7 @@
     <ClCompile Include="graph\dijkstra.cpp" />
     <ClCompile Include="graph\graphAdjList.cpp" />
     <ClCompile Include="graph\graphAdjMatrix.cpp" />
+    <ClCompile Include="graph_test.cpp" />
     <ClCompile Include="maze.cpp" />
     <ClCompile Include="prime_numbers.cpp" />
     <ClCompile Include="various_cpp.cpp" />

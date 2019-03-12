@@ -17,26 +17,22 @@ void GraphAdjMatrix::addEdgeImpl(int vertFrom, int vertTo) {
 	adjMatrix_[vertFrom][vertTo]++;
 }
 
-Graph::Vertices GraphAdjMatrix::getOutNeighbors(int vert) {
-	Vertices outNeighbors;
+void GraphAdjMatrix::getOutNeighbors(int vert, Vertices &vertices) {
+	vertices.clear();
 	
 	for (int i = 0; i < getNumVertices(); i++) {
 		for (int j = 0; j < adjMatrix_[vert][i]; j++) {
-			outNeighbors.push_back(i);
+			vertices.push_back(i);
 		}
 	}
-
-	return outNeighbors;
 }
 
-Graph::Vertices GraphAdjMatrix::getInNeighbors(int vert) {
-	Vertices inNeighbors;
+void GraphAdjMatrix::getInNeighbors(int vert, Vertices &vertices) {
+	vertices.clear();
 
 	for (int i = 0; i < getNumVertices(); i++) {
 		for (int j = 0; j < adjMatrix_[i][vert]; j++) {
-			inNeighbors.push_back(i);
+			vertices.push_back(i);
 		}
 	}
-
-	return inNeighbors;
 }

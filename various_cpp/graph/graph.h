@@ -15,8 +15,8 @@ interface IGraph {
 	virtual int addVertex() = 0;
 	virtual void addEdge(int vertFrom, int vertTo) = 0;
 
-	virtual Vertices getOutNeighbors(int vert) = 0;
-	virtual Vertices getInNeighbors(int vert) = 0;
+	virtual void getOutNeighbors(int vert, Vertices &vertices) = 0;
+	virtual void getInNeighbors(int vert, Vertices &vertices) = 0;
 
 	// todo: do we need get vertex degree pure vurtuala method?
 };
