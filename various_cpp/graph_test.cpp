@@ -1,8 +1,13 @@
 #include <algorithm>
 #include <functional>
 
+#include <iostream>
+
 #include "graph/graphAdjList.h"
 #include "graph/graphAdjMatrix.h"
+
+#include <queue>
+#include <set>
 
 void fillTestGrah(IGraph &graph) {
 	static const int numVerts = 10;
@@ -53,6 +58,68 @@ void testGraphImplementation() {
 	ensureGraphsEqual(graphList, graphMatrix);
 }
 
+
+// todo: make C++11 complient
+template<class T>
+class ProirityQueue {
+public:
+	void enqueue(T const& el, int priority) {
+		queue_.insert(q_el(el, priority));
+	}
+
+	T dequeue() {
+		auto top = queue_.begin();
+		T el = top->el;
+		queue_.erase(top);
+		return el;
+	}
+
+	bool empty() {
+		return queue_.empty();
+	}
+
+private:
+	struct q_el {
+		q_el(T const& e, int p) : el(e), priority(p) {}
+
+		T el;
+		int priority;
+	};
+
+	struct highest_priority {
+		constexpr bool operator()(q_el  const& left, q_el const& right) const {
+			return left.priority > right.priority;
+		}
+	};
+
+
+	std::multiset<q_el, highest_priority> queue_;
+};
+
+void testProirityQueue() {
+	std::priority_queue<int> queue;
+
+	for (int i : {6, 2, 7, 5, 9, 11, 11})
+		queue.push(i);
+
+	while (!queue.empty()) {
+		std::cout << queue.top() << " ";
+		queue.pop();
+	}
+
+	std::cout << std::endl;
+
+	ProirityQueue<int> custom_queue;
+	for (int i : {6, 2, 7, 5, 9, 11, 11})
+		custom_queue.enqueue(i, i);
+
+	while (!custom_queue.empty()) {
+		std::cout << custom_queue.dequeue() << " ";
+	}
+}
+
 void test_graphs() {
 	testGraphImplementation();
+
+	testProirityQueue();
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <stdexcept>
 
 #include "../various_cpp.h"
 
