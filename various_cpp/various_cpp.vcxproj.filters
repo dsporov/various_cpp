@@ -16,6 +16,9 @@
     <Filter Include="graph">
       <UniqueIdentifier>{32c9c933-e85f-47a9-9f8f-28fe8eaecc16}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Union">
+      <UniqueIdentifier>{93f159ad-a8ba-45af-bfa1-905388a28937}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="various_cpp.cpp">
@@ -48,6 +51,18 @@
     <ClCompile Include="graph_test.cpp">
       <Filter>graph</Filter>
     </ClCompile>
+    <ClCompile Include="num_of_bits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_union.cpp">
+      <Filter>Union</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickUnion.cpp">
+      <Filter>Union</Filter>
+    </ClCompile>
+    <ClCompile Include="WightedQuickUnion.cpp">
+      <Filter>Union</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="graph\graph.h">
@@ -58,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="graph\graphAdjMatrix.h">
       <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="UnionFind.h">
+      <Filter>Union</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
