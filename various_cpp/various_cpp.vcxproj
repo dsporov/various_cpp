@@ -151,6 +151,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dfs_bfs.cpp" />
+    <ClCompile Include="Dijkstra_two_stack.cpp" />
     <ClCompile Include="graph\a_start.cpp" />
     <ClCompile Include="graph\bfs.cpp" />
     <ClCompile Include="dict_search_text.cpp" />
@@ -159,8 +161,13 @@
     <ClCompile Include="graph\graphAdjMatrix.cpp" />
     <ClCompile Include="graph_test.cpp" />
     <ClCompile Include="maze.cpp" />
+    <ClCompile Include="mem_consumption.cpp" />
     <ClCompile Include="num_of_bits.cpp" />
+    <ClCompile Include="phone_numbers_trie.cpp" />
     <ClCompile Include="prime_numbers.cpp" />
+    <ClCompile Include="sort\merge_sort.cpp" />
+    <ClCompile Include="sort\quick_sort.cpp" />
+    <ClCompile Include="sort\test_sort.cpp" />
     <ClCompile Include="test_union.cpp" />
     <ClCompile Include="QuickUnion.cpp" />
     <ClCompile Include="various_cpp.cpp" />

@@ -19,6 +19,9 @@
     <Filter Include="Union">
       <UniqueIdentifier>{93f159ad-a8ba-45af-bfa1-905388a28937}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sort">
+      <UniqueIdentifier>{8f094bf5-48de-4ed8-bad8-24a49db781e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="various_cpp.cpp">
@@ -62,6 +65,27 @@
     </ClCompile>
     <ClCompile Include="WightedQuickUnion.cpp">
       <Filter>Union</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra_two_stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\test_sort.cpp">
+      <Filter>sort</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\merge_sort.cpp">
+      <Filter>sort</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\quick_sort.cpp">
+      <Filter>sort</Filter>
+    </ClCompile>
+    <ClCompile Include="mem_consumption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dfs_bfs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phone_numbers_trie.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
